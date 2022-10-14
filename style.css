@@ -1,0 +1,494 @@
+/*
+Background-color: #f6f6f6
+Blue-color: #C7DDEA
+Orange-color: #F17949
+Yellow-color: #FAB131
+*/
+
+/* Reseting margin and padding on the entire site  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: #f6f6f6;
+    line-height: 1.6em;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Resetting all link decorations */
+a {
+    text-decoration: none;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.page-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+p, button {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Header */
+.header-item {
+    background-color: #c7ddea;
+    height: 90vh;
+    max-width: 100%;
+    padding: 2em;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25em;
+}
+
+.item-text h1{
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.item-text p{
+    font-weight: 900;
+    word-spacing: .02em;
+}
+.family-img-container {
+    height: 356px;
+    width: 350px;
+}
+
+.family-image {
+   width: 100%;
+   height: 100%;
+}
+
+.join-btn {
+    background-color: #fff;
+    align-self: flex-start;
+    padding: 1.2em 4em;
+    font-weight: 700;
+    border-radius: 999em;
+    border: none;
+    box-shadow: 1px 1px 1px #111;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.join-btn:hover {
+    box-shadow: 0 0 20px #111;
+    background-color: #111;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.item-box {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-box p {
+    font-weight: 900;
+    opacity: 60%;
+}
+
+.box-links {
+    font-size: 3em;
+    font-weight: 900;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+/* Navigation */
+.nav-list {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 1;
+}
+
+.list-item {
+    flex: 1 1 25%;
+    text-align: center;
+    padding: 2em 0;
+    background-color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.list-item:hover, 
+.list-item:active {
+    background-color: #d6d6d6;
+    color: black;
+}
+
+
+
+.list-item a{
+    color:rgb(75, 75, 75, 0.7);
+    font-weight: bold;
+}
+
+
+/* Main */
+
+.main-title {
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    padding: 1rem;
+    line-height: normal;
+    text-align: center;
+}
+
+.main-title h2 {
+    text-align: left;
+}
+
+.main-text {
+    padding: 0em 1em 1em 1em;
+    font-weight: bold;
+}
+
+.main-text p {
+    padding-bottom: 3em;
+    text-align: left;
+}
+
+.main-text:nth-child(1) {
+    padding-bottom: 2em;
+}
+
+.main-text:nth-child(2),
+.main-text:nth-child(3) {
+    text-align: center;
+}
+
+.main-container:nth-child(1) {
+    padding-bottom: 5em;
+}
+
+.main-container:nth-child(2) {
+    background-color: #FAB131;
+    padding: 2em 2em 2em 2em;
+}
+
+/* positioning of the cards content*/
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+.card-picture {
+    border: none;
+    border-radius: .5em;
+    width: 18rem;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: -2em;
+    left: 0;
+    right: 0;
+}
+
+.card {
+    background-color: white;
+    width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    border-radius: .5em;
+    text-align: center;
+    height: 23rem;
+    box-shadow: 1px 1px 6px rgb(109, 109, 109);
+    cursor: zoom-in;
+    transition: 400ms;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 20px #111;
+    height: 25rem;
+    width: 23rem;
+}
+
+.card-title {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.card-text {
+    padding: 1em 1em 2em 1em;
+    font-weight: 700;
+    color: #A9A19E;
+    opacity: 1;
+}
+
+/* Card images */
+.child-img {
+    background-color: #c7ddea;
+    
+}
+
+.adult-img {
+    background-color: #FAB131;
+}
+
+.old-img {
+    background-color: #F17949;
+}
+
+
+
+
+/* Tutorial 6 boxar */
+
+.tutorial-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorial-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    height: 12rem;
+}
+
+.tutorial-item h2{
+    font-weight: 900;
+    line-height: 1em;
+    font-size: 3em;
+}
+
+.tutorial-item p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Ändrar färg på 3 av boxarna */
+.tutorial-item:nth-child(1) {
+    background-color: #C7DDEA;
+}
+.tutorial-item:nth-child(3) {
+    background-color: #d6d6d6;
+}
+.tutorial-item:nth-child(5) {
+    background-color: #F17949;
+}
+
+
+/* Lägger till nummer i boxarna */
+.tutorial-item:nth-child(2)::before {
+    content: "01";
+}
+
+.tutorial-item:nth-child(3)::before {
+    content: "02";
+}
+
+.tutorial-item:nth-child(4)::before {
+    content: "03";
+}
+.tutorial-item:nth-child(5)::before {
+    content: "04";
+    
+}
+.tutorial-item:nth-child(6)::before {
+    content: "05";
+}
+
+.tutorial-item::before {
+    content: "";
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    left: .5em;
+    top: .5em;
+    opacity: 0.7;
+}
+ 
+    
+/* Footer */
+footer {
+    background-color: #A9A19E;
+    height: 15rem;
+    
+}
+
+footer button {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Header */
+    .page-wrapper {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        display: flex;
+        height: 80vh;
+    }
+
+    .header-item {
+        flex: 1 1 50%;
+        height: auto;
+        position: relative;
+        
+    }
+    .item-text {
+        justify-content: space-around;
+        padding: 1em 8em 0em 8em;
+        
+    }
+    .header-item-2 {
+        flex: 1 1 50%;
+        background-color: aqua;
+    }
+    .family-img-container {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .item-box {
+        height: 50%;
+    }
+
+    /* Navigation */
+    .nav-list {
+        position: static;
+    }
+
+    
+    /* Main */
+    .hidden {
+        display: block;
+        margin-top: 5em;
+    }
+
+    .main-container {
+        display: flex;
+        position: relative;
+        height: 80vh;
+    }
+
+    .main-container:nth-child(1) {
+        flex-direction: row;
+        height: 33em;
+        padding: 7em;
+    }
+
+    .main-container:nth-child(2) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5em;
+        padding-bottom: 0;
+    }
+
+    .main-title {
+        width:50%;
+    }   
+
+    .main-title h2 {
+        /* padding: 1rem; */
+        width: 80%;
+        
+    }
+
+    .main-text {
+        width: 50%;
+    }
+
+    .main-text p {
+        line-height: 1.5em;
+        font-size: 1.3em;
+        padding-top: 1em;
+    }
+
+    .card-container {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+        position: absolute;
+        bottom: -11em;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        
+    }
+    .card {
+        margin: 0 0;
+    }
+
+    /* Tuorial */ 
+    .tutorial-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .tutorial-item {
+        flex: 1 1 33%;
+        height: 25rem;
+    }
+
+    footer button {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 3em;
+
+        font-size: 1.5em;
+
+        border: none;
+    }
+
+    footer a {
+        color: black;
+    }
+    
+    .pointer {
+        width: 0.7em;
+        height: 0.7em;
+        border: 2px solid black;
+        transform: rotate(45deg);
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 0.5em;
+        border-bottom: none;
+        border-right: none;
+    }
+}
