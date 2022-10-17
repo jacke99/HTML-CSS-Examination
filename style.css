@@ -12,6 +12,7 @@ Yellow-color: #FAB131
 }
 
 body, html {
+    scroll-behavior: smooth;
     background-color: #f6f6f6;
     line-height: 1.6em;
     width: 100%;
@@ -62,6 +63,7 @@ p, button {
 }
 
 .item-text p{
+    color: #6e6b6b;
     font-weight: 900;
     word-spacing: .02em;
 }
@@ -75,6 +77,23 @@ p, button {
    height: 100%;
 }
 
+.item-text span {
+    color: white;
+}
+
+.item-box:nth-child(1) {
+    background-color: #F17949;
+}
+
+.item-box:nth-child(2) {
+    background-color: #FAB131;
+}
+
+.box-links {
+    color: white;
+}
+
+/* Styling the buttons and making a hover effect */
 .join-btn {
     background-color: #fff;
     align-self: flex-start;
@@ -93,6 +112,7 @@ p, button {
     color: #fff;
 }
 
+/* Hides button in mobile view */
 .hidden {
     display: none;
 }
@@ -187,12 +207,15 @@ p, button {
 
 .main-container:nth-child(1) {
     padding-bottom: 5em;
+    background-color: #A9A19E;
 }
 
 .main-container:nth-child(2) {
     background-color: #FAB131;
     padding: 2em 2em 2em 2em;
 }
+
+
 
 /* positioning of the cards content*/
 .card-container {
@@ -211,7 +234,7 @@ p, button {
     left: 0;
     right: 0;
 }
-
+/* styling of cards */
 .card {
     background-color: white;
     width: 20rem;
@@ -248,23 +271,32 @@ p, button {
 
 /* Card images */
 .child-img {
-    background-color: #c7ddea;
-    
+    height: 150px;
+    width: 159px;
 }
 
 .adult-img {
-    background-color: #FAB131;
+    height: 150px;
+    width: 159px;
 }
 
 .old-img {
+    height: 150px;
+    width: 159px;
+}
+
+/* Background color of the picture cards */
+.blue {
+    background-color: #C7DDEA;
+}
+.orange {
+    background-color: #FAB131;
+}
+.dark-orange {
     background-color: #F17949;
 }
 
-
-
-
-/* Tutorial 6 boxar */
-
+/* Tutorial 6 boxes */
 .tutorial-container {
     display: flex;
     flex-direction: column;
@@ -291,7 +323,7 @@ p, button {
     font-weight: bold;
 }
 
-/* Ändrar färg på 3 av boxarna */
+/* Changing colors on 3 tutorial boxes */
 .tutorial-item:nth-child(1) {
     background-color: #C7DDEA;
 }
@@ -303,7 +335,7 @@ p, button {
 }
 
 
-/* Lägger till nummer i boxarna */
+/* Adding numbers to the tutorial boxes */
 .tutorial-item:nth-child(2)::before {
     content: "01";
 }
@@ -315,10 +347,11 @@ p, button {
 .tutorial-item:nth-child(4)::before {
     content: "03";
 }
+
 .tutorial-item:nth-child(5)::before {
     content: "04";
-    
 }
+
 .tutorial-item:nth-child(6)::before {
     content: "05";
 }
@@ -333,12 +366,10 @@ p, button {
     opacity: 0.7;
 }
  
-    
 /* Footer */
 footer {
     background-color: #A9A19E;
     height: 15rem;
-    
 }
 
 footer button {
@@ -361,17 +392,14 @@ footer button {
     .header-item {
         flex: 1 1 50%;
         height: auto;
-        position: relative;
-        
+        position: relative; 
     }
     .item-text {
         justify-content: space-around;
         padding: 1em 8em 0em 8em;
-        
     }
     .header-item-2 {
         flex: 1 1 50%;
-        background-color: aqua;
     }
     .family-img-container {
         position: absolute;
@@ -419,7 +447,6 @@ footer button {
     }   
 
     .main-title h2 {
-        /* padding: 1rem; */
         width: 80%;
         
     }
@@ -451,7 +478,7 @@ footer button {
         margin: 0 0;
     }
 
-    /* Tuorial */ 
+    /* Tutorial */ 
     .tutorial-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -493,5 +520,4 @@ footer button {
         border-bottom: none;
         border-right: none;
     }
-
 }
